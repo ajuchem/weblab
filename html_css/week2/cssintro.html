@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CSS Intro</title>
+    <!-- VERY BASIC CSS INTRO -->
+    <style media="screen">
+      selectorName {
+        property: value;
+      }
+
+      body {
+        background-color: #f5e9d0;
+        color: #4d5b73;
+        font-family: sans-serif;
+      }
+
+      p a {
+        text-decoration: none;
+      }
+
+      .search {
+        color: #FF8C00;
+      }
+
+      #special {
+        color: #483D8B;
+      }
+
+      .footer {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div class="header">
+      <h1>Header Text</h1>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="content">
+      <p>Some content <a href="http://google.com">here</a>, removing the
+        underline.</p>
+      <p id="special">Some more content (using ids to style it).</p>
+      <a href="http://google.com" class="search">Search</a>, with different
+      style from the other anchor.
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+      Copyright &copy; 2016
+    </div>
+  </body>
+</html>
