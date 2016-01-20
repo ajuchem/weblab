@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Forms. We don't need no stinkin' forms!</title>
+    <style>
+      body {
+        background-color: #f5e9d0;
+        color: #4d5b73;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>A form.</h1>
+    <form action="form_submit.php" method="post" name="myform" target="_blank">
+
+      <label for="firstName">First Name</label>
+      <input type="text" name="firstName" id="firstName">
+
+      <label for="lastName">Last Name</label>
+      <input type="text" name="lastName" id="lastName"><br>
+
+      <fieldset>
+        <label for="isAwesome">is awesome?
+          <input type="checkbox" name="isAwesome">
+        </label>
+      </fieldset>
+
+      <input type="button" name="hello_button" id="hello_button" value="hello">
+      <input type="submit" value="submit" id="submit">
+      <input type="reset" value="reset" id="reset">
+    </form>
+  </body>
+</html>
