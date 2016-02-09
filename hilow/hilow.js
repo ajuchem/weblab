@@ -50,7 +50,7 @@ $(function(){
       text = "is too";
     }
 
-    li.html("<b>"+ value + "</b> "+ text + " <b>" + str + "</b>");
+    li.html("<strong>"+ value + "</strong> "+ text + " <strong>" + str + "</strong>");
     status.prepend(li);
   }
 
