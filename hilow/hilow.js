@@ -1,10 +1,10 @@
 
 $(function(){
 
-  var input = $('#guess')
-    , btn = $('#guess_btn')
-    , status = $('#guesses')
-    , reset = $('#reset');
+  var input = $('#guess'),
+      btn = $('#guess_btn'),
+      status = $('#guesses'),
+      reset = $('#reset');
 
 
   var guesses = 0;
