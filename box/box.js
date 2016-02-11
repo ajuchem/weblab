@@ -1,10 +1,4 @@
-// $(function() {}) --> This is the same as line 9
-
-/* Using a var would be faster compared to lines 11 and 12
-var box = $('.box');
-box.on('click', function() {
-  alert('Awesome!');
-}) */
+// $(function() {}) --> This is the same as line 3
 
 $(document).ready(function() {
 
