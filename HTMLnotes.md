@@ -26,3 +26,15 @@ label tag takes one attribute: what is for
 ### IMG
 
 always use the ``alt`` attribute!! --> acessibility
+
+***
+
+> ```padding``` creates space between the content and border of an element. This whitespace is useful in order to improve readability and organization of the page.
+
+> ```margin``` create space for multiple html elements, transparent area outside the border of an element.
+
+***
+
+To move the html element to the far left of the screen, use ```margin-right: auto```.
+This will maximize the amount of space there is on the right side margin, pushing the element to the far left.
+To center, use ```margin-right: auto``` and ```margin-left: auto```
