@@ -4,17 +4,17 @@ A block-level element occupies the entire space of its parent element (container
 
 An inline element occupies only the space bounded by the tags that define the inline element - MDN
 
-## HEAD
+### HEAD
 
 - title
 - meta
 - link
 - style
 
-## TABLES
+### TABLES
 Can accept ``<caption>``
 
-## FORMS
+### FORMS
 
 method = post (secured)
 method = get (unsecured)
@@ -23,6 +23,6 @@ method = get (unsecured)
 
 label tag takes one attribute: what is for
 
-## IMG
+### IMG
 
-always use the alt attribute!!
+always use the ``alt`` attribute!! --> acessibility
