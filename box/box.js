@@ -11,7 +11,7 @@ $(document).ready(function() {
     elem.animate({
       marginLeft: 900,
       backgroundColor: '#4D5B73'
-    }, 3000, 'easeOutSine', function(){
+    }, 3000, 'easeOutSine', function onComplete(){
       elem.css({
         'margin-left': 20,
         'background-color': '#f5e9d0'
