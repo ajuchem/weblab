@@ -11,19 +11,27 @@ $(document).ready(function() {
   // REMOVE BUTTON FUNCTION
   userTable.on('click', 'button.remove', function() {
     var btn = $(this);
-    btn.parents("tr").remove();
+    btn.parents("tr").remove(); // goes up to parent and clears only that
   });
 
   // ADD BUTTON
   add_btn.on('click', function() {
+    var name = nameField.val();
+    var email = emailField.val();
 
-    addUser({
-      name: nameField.val(),
-      email: emailField.val()
-    });
+    if (email.match(/^.+?\@.+\..+?$/)) {
+      emailField.removeClass('invalid');
 
-    nameField.val("");
-    emailField.val("");
+      addUser({ // Adds info if email is valid
+        name: name,
+        email: email
+      });
+
+      nameField.val(""); // Clears fields if email is valid
+      emailField.val("");
+    } else {
+      emailField.addClass('invalid');
+    }
   });
 
   // ADD USER FUNCTION
