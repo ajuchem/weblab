@@ -5,10 +5,11 @@
     height: 200px;
     background-color: #4d5b73;
     color: #fff;
-    /* transition order: property, duration, function, delay */
+    /* transition order: property, duration, function, delay - separate properties with commas */
     transition: color 1s ease 0s,
                 background-color .5s linear 0s,
-                border-radius 20s ease 0s
+                border-radius 2s ease 0s,
+                transform 1s ease 0s;
 }
 
 .block:hover {
@@ -21,3 +22,27 @@
     background-color: #d6bcbd;
     border-radius: 100px;
 }
+
+.moved {
+    /* separate properties with space */
+    transform: translate(300px, 0px) rotate(360deg) skew(34deg) scaleX(0.5);
+
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 768px) {
+    /* phones */
+}
+
+
+/* EXAMPLE OF MEDIA QUERY STYLES FOR PRINTING
+    @media print {
+        .banner {
+            display: none;
+        }
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+    }*/
