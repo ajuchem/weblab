@@ -1,0 +1,15 @@
+.block {
+    width: 200px;
+    height: 200px;
+    background-color: #4d5b73;
+    color: #f5e9d0;
+    transition-delay: 0;
+    transition-duration: 1s;
+    transition-property: color;
+    transition-timing-function: ease;
+
+}
+
+.block:hover {
+    color: #D6BCBD;
+}
