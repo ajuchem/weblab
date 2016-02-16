@@ -3,11 +3,13 @@
     height: 200px;
     background-color: #4d5b73;
     color: #f5e9d0;
-    transition-delay: 0;
-    transition-duration: 1s;
-    transition-property: color;
-    transition-timing-function: ease;
+    /*transition-delay: 0;*/
+    /*transition-duration: 1s;*/
+    /*transition-property: color;*/
+    /*transition-timing-function: ease;*/
 
+    /*transition order: property, duration, function, delay*/
+    transition: color 1s ease 3s;
 }
 
 .block:hover {
