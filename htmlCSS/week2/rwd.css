@@ -1,12 +1,20 @@
+/* BASIC */
+
+body {
+    font-family: sans-serif;
+    /*background-color: #A7ADB3;*/
+}
+
+/* CLASSES */
+
 .container {
     max-width: 500px;
     min-width:450px;
     margin: 0 auto;
+    background-color: #fff;
 }
 
-h1, p {
-    font-family: sans-serif;
-}
+/* MEDIA QUERIES */
 
 @media only screen and (min-width: 500px), screen and (max-height: 700px) {
     .container {
@@ -16,5 +24,11 @@ h1, p {
 
     h1 {
         font-family: serif;
+    }
+}
+
+@media only screen and (min-width: 701px) {
+    .container {
+        max-width:960px;
     }
 }
