@@ -64,12 +64,23 @@ body {
     width: 100px;
     height: 100px;
     background-color: green;
+    flex: 0 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 2rem;
-    font-weight: 600px;
+    font-weight: 600;
     margin-bottom: 1rem;
+}
+
+.ad:first-child {
+    margin-top: 1rem;
+}
+
+.ad:after {
+    content: "$";
+    display: block;
+    color: #fff;
 }
 
 
