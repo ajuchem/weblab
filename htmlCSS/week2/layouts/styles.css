@@ -1,15 +1,37 @@
+/* RESET BODY */
+
 body {
     padding: 0;
     margin: 0;
 }
 
+
+/* HEADER */
+
 .header {
     background-color: lightgreen;
 }
 
+
+/* CONTENT */
+
 .content {
     background-color: #ccc;
 }
+
+.content>div {
+    float: left;
+}
+
+.content:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+
+/* FOOTER */
 
 .footer {
     background-color: lightblue;
