@@ -23,7 +23,7 @@ body {
     float: left;
 }
 
-.content:after {
+.clearfix:after {
     content: "";
     display: block;
     height: 0;

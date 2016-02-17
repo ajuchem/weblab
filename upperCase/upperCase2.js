@@ -12,6 +12,6 @@ function upperCaseFirstLetters(aStr) {
   words.forEach(function(word) {
     var upperCased = word.charAt(0).toUpperCase() + word.slice(1);
     output.push(upperCased);
-  })
+  });
   return output.join(" ");
   }

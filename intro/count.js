@@ -6,7 +6,7 @@ var lookup = {};
   group.split('').forEach(function(char){
     lookup[char] = idx + 1;
   })
-})
+});
 
 function countHoles(str) {  // str = 'Hello'
   var holeCount = 0;

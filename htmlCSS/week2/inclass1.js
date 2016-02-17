@@ -6,10 +6,10 @@ $(function () {
     $('.button1').on('click', function() {
         block.toggleClass('rounded');
 
-    })
+    });
 
     $('.button2').on('click', function() {
         block.toggleClass('moved');
 
     })
-})
+});
