@@ -14,13 +14,15 @@
       <!-- Include the header of the page -->
       <% include ../partials/header %>
     </header>
-
     <h3>I'm awesome because:</h3>
     <ul>
       <% reasons.forEach(function(reason) { %>
         <li><%= reason.reason %></li>
       <% }); %>
     </ul>
+    <!-- The action of the form points to the same route, but the method
+         is 'POST'. We will be capturing the form input from the input box
+         'myReason' -->
     <form class="" action="/about" method="post">
       <label for="myReason">More reasons:</label>
       <input type="text" name="myReason" id="myReason">
