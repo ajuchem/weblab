@@ -1,0 +1,30 @@
+<!-- views/pages/name.ejs -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Call the ejs include command and provide the path to the
+         partial to include. Path is relative to this file -->
+
+    <!-- Include our head.ejs file -->
+    <% include ../partials/head %>
+    <script type="text/javascript">
+      document.cookie = "username=Allie";
+    </script>
+  </head>
+  <body>
+      <header>
+        <!-- Include the header of the page -->
+        <% include ../partials/header %>
+      </header>
+      <div class="container">
+        <h3>Hello, <%= name %>!</h3>
+        <p>The word of the day is: <%= word %>.</p>
+      </div>
+
+      <!-- Include the footer of the page -->
+      <footer>
+        <% include ../partials/footer %>
+      </footer>
+  </body>
+</html>

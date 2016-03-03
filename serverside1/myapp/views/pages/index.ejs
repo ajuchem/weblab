@@ -15,15 +15,17 @@
       <% include ../partials/header %>
     </header>
 
-    <!-- Include the tagline string -->
-    <!-- This opening EJS tag includes an '=' sign. This tells EJS to
-         ouput the value of the string -->
-    <h3><%= tagline %></h3>
+    <div class="container">
+      <!-- Include the tagline string -->
+      <!-- This opening EJS tag includes an '=' sign. This tells EJS to
+           ouput the value of the string -->
+      <h3 class="tagline"><%= tagline %></h3>
 
-    <h4>Friends</h4>
-    <% friends.forEach(function(friend) { %>
-      <li><%= friend.name %></li>
-    <% }); %>
+      <h4>Friends</h4>
+      <% friends.forEach(function(friend) { %>
+        <li><%= friend.name %></li>
+      <% }); %>
+    </div>
 
     <!-- Include the footer of the page -->
     <footer>

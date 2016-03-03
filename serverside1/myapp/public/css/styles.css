@@ -8,6 +8,9 @@ body {
   background-color: #f5e9d0;
   color: #4d5b73;
   font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 h1 {
@@ -22,6 +25,17 @@ a:visited {
   color: #4d5b73;
 }
 
-/*ul, ol {
-  list-style-type: none;
-}*/
+footer {
+  margin-top: auto;
+  text-align: center;
+}
+
+.tagline {
+  font-style: italic;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;;
+  padding: 25px;
+}

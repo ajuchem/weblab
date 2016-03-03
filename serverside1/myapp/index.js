@@ -3,6 +3,12 @@ var express = require('express');
 // body-parser allow us to easily capture form values when receiving a request
 // assign it to the var bodyParser
 var bodyParser = require('body-parser');
+// assign cookie-parser to var cookieParser
+var cookieParser = require('cookie-parser');
+
+var randomWord = require('random-word');
+
+var request = require('request');
 
 var app = express();
 
@@ -21,6 +27,9 @@ app.use(express.static('public'));
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
+// tell the app to use the cookie parser
+app.use(cookieParser());
+
 // index page
 // this is our default route, it has a small array of json objects defined in it
 app.get('/', function(req,res) {
@@ -34,7 +43,7 @@ app.get('/', function(req,res) {
   ]
 
   // a simple string to act as another piece of data
-  var tagline = "Of course, there they just call it food.";
+  var tagline = '"Of course, there they just call it food!"';
 
   // calling the render method and passing in an object containing our array and string
   res.render('pages/index', {
@@ -66,6 +75,36 @@ app.post('/about', function(req,res) {
   // render the 'about' page again & pass in the updated 'reasons' array
   res.render('pages/about', {
     reasons: global.reasons
+  })
+})
+
+// another route, removes user input
+app.get('/about/:index', function(req,res) {
+  console.log(req.params);
+  var indexOfTheReason = req.params.index;
+  global.reasons.splice(indexOfTheReason,1)
+  res.render('pages/about', {
+    reasons: global.reasons
+  })
+})
+
+app.get('/name', function(req, res) {
+  var theName = 'Human';
+  var theWord = randomWord();
+  console.log(theWord);
+  var url = 'http://dictionaryapi.net/api/definition/' + theWord;
+  request(url, function(error, response, body) {
+    if(!error && response.statusCode === 200) {
+      console.log(body);
+    }
+  })
+  if(req.cookies.username) {
+    theName = req.cookies.username;
+  }
+  console.log("Hello there, " + theName);
+  res.render('pages/name', {
+    name: theName,
+    word: theWord
   })
 })
 
