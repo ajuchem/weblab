@@ -91,11 +91,17 @@ app.get('/about/:index', function(req,res) {
 app.get('/name', function(req, res) {
   var theName = 'Human';
   var theWord = randomWord();
+  // var theWord = 'coenamored'
   console.log(theWord);
   var url = 'http://dictionaryapi.net/api/definition/' + theWord;
   request(url, function(error, response, body) {
-    if(!error && response.statusCode === 200) {
-      console.log(body);
+    if(response.body != '[]') {
+      if(!error && response.statusCode === 200) {
+        var parsedJSON = JSON.parse(body)
+        console.log(parsedJSON[0].Definitions[0]);
+      }
+    } else {
+      console.log('Definition not found!')
     }
   })
   if(req.cookies.username) {
