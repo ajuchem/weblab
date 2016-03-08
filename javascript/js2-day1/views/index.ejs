@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>More Node stuff</title>
+    <style media="screen">
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      width: 100%;
+      background-color: #f5e9d0;
+      color: #4d5b73;
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+      ul {
+        list-style-type: none;
+      }
+      footer {
+        margin-top: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1><%= data.pageTitle %></h1>
+    <% console.log('you are awesome!'); %>
+
+    <ul>
+      <% data.properties.forEach(function(property, index) { %>
+          <li> <%= property.ownerName %> </li>
+      <% }); %>
+    </ul>
+
+    <footer>
+      <h5>Coded by <%= data.properties[0].ownerName %></h5>
+    </footer>
+
+  </body>
+</html>
