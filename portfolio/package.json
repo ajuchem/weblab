@@ -1,7 +1,7 @@
 {
   "name": "weblab-portfolio",
   "version": "1.0.0",
-  "description": "Portfolio created during WebLab",
+  "description": "Portfolio created during WebLab class",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
