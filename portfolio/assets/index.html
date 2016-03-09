@@ -1,25 +1,80 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Portfolio</title>
-        <link href="css/styles.css" rel="stylesheet">
-        <!--<script src=" "></script>-->
-    </head>
-    <body>
-    <div class="navbar">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Allie Daudt</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="row">
+    <div class="nav navbar-fixed-top">
+      <div class="container-fluid">
+        <a id="brand" href="mailto:ajuchem@daudt.com">Allie Daudt</a>
         <ul>
-            <li>
-                <a href="#home">Home</a>
-            </li>
-            <li>
-                <a href="gallery.html">Gallery</a>
-            </li>
-            <li>
-                <a href="about.html">About</a>
-            </li>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#main-content">About</a></li>
+          <li><a href="#social">Contact</a></li>
         </ul>
+      </div>
     </div>
-    <!--<script type="text/javascript" src=" "></script>-->
-    </body>
+  </div>
+  <div id="hero">
+    <img src="img/allie.jpg" alt="Allie Daudt">
+    <h2>Allie Daudt</h2>
+    <span class="city">Boulder County, CO</span>
+  </div>
+  <div id="main-content" class="container-fluid">
+    <h3 class="text-center">Jr Front End Web Developer</h3>
+    <div class="row">
+      <div class="col-sm-4 examples">
+        <div class="thumbnail">
+          <img class="img-responsive img-rounded" src="img/petsitter.jpg" alt="Site 1">
+          <div class="caption">
+            <h4>Pet Sitter (WIP)</h4>
+            <p>Site developed using Bootstrap theme for pet sitter.</p>
+            <!-- <a href="#" class="btn">See it!</a> -->
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 examples">
+        <div class="thumbnail">
+          <img class="img-responsive img-rounded" src="img/catbreeder.jpg" alt="Site 2">
+          <div class="caption">
+            <h4>Cat Breeder (WIP)</h4>
+            <p>Landing page developed for Maine Coon breeder in Florida.</p>
+            <!-- <a href="#" class="btn">See it!</a> -->
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 examples">
+        <div class="thumbnail">
+          <img class="img-responsive img-rounded" src="img/farm.jpg" alt="Site 3">
+          <div class="caption">
+            <h4>Farm-to-Table (WIP)</h4>
+            <p>Mockup site for a farm-to-table restaurant in Brazil.</p>
+            <!-- <a href="#" class="btn">See it!</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="social">
+    <div class="container-fluid">
+      <h3>Find me here</h3>
+      <ul>
+        <li><a href="https://twitter.com/ajuchem" target="_blank"><img src="img/twitter.svg" alt="Twitter"></a></li>
+        <li><a href="https://www.linkedin.com/in/ajuchemdaudt" target="_blank"><img src="img/linkedin.svg" alt="LinkedIn"></a></li>
+        <li><a href="https://github.com/ajuchem" target="_blank"><img src="img/gh50.png" alt="GitHub"></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer">
+    <p>&copy; 2015 Allie Daudt</p>
+  </div>
+  <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</body>
 </html>
